@@ -1,5 +1,6 @@
 # SCRIPT FREE VPS-GHOST ∞ Meta >>> 🇵🇪 - 🇳🇮
 # -----------------------------------------
+![Screenshot](VPS-PERU.jpeg)
 
 # Instalador Script VPS-GHOST : ∞ Meta:
 ```

@@ -20,7 +20,7 @@ mine_port4
 echo -e "$BARRA"
 cat << EOF
 
-           KEY GENERADOR : 🐲𝐎𝐖𝐍𝐄𝐑 : 𝐆𝐇𝐎𝐒𝐓🐲          
+           KEY GENERADOR : 🐲𝐎𝐖𝐍𝐄𝐑 : 𝐆𝐇𝐎𝐒𝐓🐲             
            INSTALACIONES: $(cat $IVAR)
            
 EOF
@@ -67,7 +67,7 @@ fi
 done
 }
 bot_menu () {
-source <(curl -sSL https://raw.githubusercontent.com/ADM-PERU/MGRBOT/main/confbot.sh)
+source <(curl -sSL https://raw.githubusercontent.com/GeneradorVIP/BOT/main/confbot.sh)
 }
 fun_list () {
 rm ${SCPT_DIR}/*.x.c &> /dev/null
@@ -310,7 +310,7 @@ read -p "Enter"
 }
 
 atualizar_geb () {
-wget -O $HOME/instger.sh https://raw.githubusercontent.com/ADM-PERU/VIP/main/instgerador.sh &>/dev/null
+wget -O $HOME/instger.sh https://raw.githubusercontent.com/GeneradorVIP/PERU/main/instgerador.sh &>/dev/null
 chmod +x $HOME/instger.sh
 cd $HOME
 ./instger.sh

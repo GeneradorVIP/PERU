@@ -16,7 +16,7 @@ echo "$IP" > /usr/bin/vendor_code
 function_verify () {
 #echo -e "verificando..."
 # check_ip
- permited=$(curl -sSL "https://raw.githubusercontent.com/ADM-PERU/VIP/main/Control/Control-IP")
+ permited=$(curl -sSL "https://raw.githubusercontent.com/GeneradorVIP/PERU/main/Control/Control-IP")
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n\n\e[31m====================================================="
@@ -106,7 +106,7 @@ echo -e "\033[1;31m ▪︎\033[1;32mRecibido Con Éxito!!!"
 [[ -e $HOME/$arqx ]] && veryfy_fun $arqx
 } || echo -e "\033[1;31m ▪︎\033[1;31mFallo (No Se Recibió)"
 done
-[[ ! -e /usr/bin/trans ]] && wget -O /usr/bin/trans https://raw.githubusercontent.com/ADM-PERU/VIP/main/Install/trans &> /dev/null
+[[ ! -e /usr/bin/trans ]] && wget -O /usr/bin/trans https://raw.githubusercontent.com/GeneradorVIP/PERU/main/Install/trans &> /dev/null
 [[ -e /bin/http-server.py ]] && mv -f /bin/http-server.py /bin/http-server.sh && chmod +x /bin/http-server.sh
 [[ $(dpkg --get-selections|grep -w "bc"|head -1) ]] || apt-get install bc -y &>/dev/null
 [[ $(dpkg --get-selections|grep -w "screen"|head -1) ]] || apt-get install screen -y &>/dev/null

@@ -83,7 +83,7 @@ fun_squid  () {
   [[ -e $var_squid ]] && rm $var_squid
   return 0
   }
-echo -e "\033[1;32m $(fun_trans "INSTALADOR SQUID By GOSHT")"
+echo -e "\033[1;32m $(fun_trans "INSTALADOR SQUID VPS-PERU")"
 msg -bar
 fun_ip
 echo -ne " $(fun_trans "Confirme su ip")\033[1;91m"; read -p ": " -e -i $IP ip

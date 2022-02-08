@@ -355,7 +355,7 @@ fi
 msg -bar
     while true; do
     echo -ne "\033[1;37m"
-    echo " $(source trans -b pt:${id} "Ingresa Puerto Dropbear/SSH a USAR ( Defauld 143 ) ") "
+    echo " $(source trans -b pt:${id} "Ingresa Puerto Dropbear/SSH a USAR ( Defauld 443 ) ") "
     read -p " Listen-Dropbear: " porta1
     [[ $(mportas|grep $porta1) ]] || break
     echo -e "\033[1;33m $(source trans -b es:${id} "El puerto seleccionado ya se encuentra en uso")"

@@ -200,7 +200,7 @@ MIP2=$(wget -qO- ifconfig.me)
 }  
 function_verify () {
   ### INTALAR VERCION DE SCRIPT
-  v1=$(curl -sSL "https://raw.githubusercontent.com/ADM-PERU/VIP/main/VerScrpt/VercOld")
+  v1=$(curl -sSL "https://raw.githubusercontent.com/GeneradorVIP/PERU/main/VerScrpt/VercOld")
   echo "$v1" > /etc/versin_script
   [[ ! -e /usr/local/lib/lsystembin2 ]] && touch /usr/local/lib/lsystembin2
 }
@@ -221,11 +221,11 @@ rm -rf /etc/newadm/ger-user/nombre.log &>/dev/null
 [[ $(find /etc/newadm/ger-user -name IDT.log|grep -w "IDT.log"|head -1) ]] || wget -O /etc/newadm/ger-user/IDT.log https://www.dropbox.com/s/vzsacahfbwwm0ow/IDT.log &>/dev/null
 [[ $(find /etc/newadm/ger-user -name tiemlim.log|grep -w "tiemlim.log"|head -1) ]] || wget -O /etc/newadm/ger-user/tiemlim.log https://www.dropbox.com/s/kkchh0ldtdt2yza/tiemlim.log &>/dev/null
 
-wget -O /bin/rebootnb https://raw.githubusercontent.com/ADM-PERU/VIP/main/ArchUt/rebootnb &> /dev/null
+wget -O /bin/rebootnb https://raw.githubusercontent.com/GeneradorVIP/PERU/main/ArchUt/rebootnb &> /dev/null
 chmod +x /bin/rebootnb 
-wget -O /bin/resetsshdrop https://raw.githubusercontent.com/ADM-PERU/VIP/main/ArchUt/resetsshdrop &> /dev/null
+wget -O /bin/resetsshdrop https://raw.githubusercontent.com/GeneradorVIP/PERU/main/ArchUt/resetsshdrop &> /dev/null
 chmod +x /bin/resetsshdrop
-wget -O /etc/versin_script_new https://raw.githubusercontent.com/ADM-PERU/VIP/main/VerScrpt/VercUp &>/dev/null
+wget -O /etc/versin_script_new https://raw.githubusercontent.com/GeneradorVIP/PERU/main/VerScrpt/VercUp &>/dev/null
 msg -bar2
 echo '#!/bin/sh -e' > /etc/rc.local
 sudo chmod +x /etc/rc.local
@@ -251,7 +251,7 @@ echo 'echo -e "\033[1;35m    "'>> .bashrc
 echo 'echo -e "\033[0;36m  ✅RESELLER : $mess1 "'>> .bashrc
 echo 'echo "" '>> .bashrc
 echo 'echo -e "\033[0;36m  ✅PARA MOSTRAR EL PANEL DE CONTROL ESCRIBA:  \033[0;37m\033[41m menu \033[0;31m"'>> .bashrc
-echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/ADM-PERU/VIP/main/VerScrpt/VercUp &>/dev/null'>> .bashrc
+echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/GeneradorVIP/PERU/main/VerScrpt/VercUp &>/dev/null'>> .bashrc
 echo 'echo "" '>> .bashrc
 echo -e "   ESCRIBE menu PARA ACCEDER AL PANEL DE CONTROL: "
 echo -e "\033[0;37m                      \033[1;41m menu \033[0;37m" && msg -bar2
@@ -339,15 +339,15 @@ MSG="⚠️ AVISO DE VPS: $NOM1 ⚠️
 👉 MENSAJE DE PRUEBA
 🔰 EXITOSO... SALUDOS"
 curl -s --max-time 10 -d "chat_id=$IDB2&disable_web_page_preview=1&text=$MSG" $URL &>/dev/null
-echo -e "\033[1;34mSE ENVIO MENSAJE DE PRUEBA SI NO LLEGA CONTACTE A @EliteMasterGO"
+echo -e "\033[1;34mSE ENVIO MENSAJE DE PRUEBA SI NO LLEGA CONTACTE A @GENKEY_BOT"
 }
 fun_ip
-wget -O /usr/bin/trans https://raw.githubusercontent.com/ADM-PERU/VIP/main/Install/trans &> /dev/null
-wget -O /bin/Desbloqueo.sh https://raw.githubusercontent.com/ADM-PERU/VIP/main/ArchUt/Desbloqueo.sh &> /dev/null
+wget -O /usr/bin/trans https://raw.githubusercontent.com/GeneradorVIP/PERU/main/Install/trans &> /dev/null
+wget -O /bin/Desbloqueo.sh https://raw.githubusercontent.com/GeneradorVIP/PERU/main/ArchUt/Desbloqueo.sh &> /dev/null
 chmod +x /bin/Desbloqueo.sh
-wget -O /bin/monitor.sh https://raw.githubusercontent.com/ADM-PERU/VIP/main/ArchUt/Monitor-Service/monitor.sh &> /dev/null
+wget -O /bin/monitor.sh https://raw.githubusercontent.com/GeneradorVIP/PERU/main/ArchUt/Monitor-Service/monitor.sh &> /dev/null
 chmod +x /bin/monitor.sh
-wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/ADM-PERU/VIP/main/ArchUt/Monitor-Service/estilos.css &> /dev/null
+wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/GeneradorVIP/PERU/main/ArchUt/Monitor-Service/estilos.css &> /dev/null
 msg -bar2
 msg -bar2
 msg -ama "     [ VPS - GHOST - SCRIPT \033[1;97m ✨MAQUINA VIRTUAL✨\033[1;33m ]"

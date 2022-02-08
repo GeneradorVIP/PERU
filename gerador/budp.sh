@@ -27,14 +27,14 @@ pid_badvpn=$(ps x | grep badvpn | grep -v grep | awk '{print $1}')
 if [ "$pid_badvpn" = "" ]; then
     sleep 1
     msg -bar
-    msg -ama "                   ACTIVANDO BADVPN 7300"
+    msg -ama "                   ACTIVANDO BADVPN 7300..."
     msg -bar 
     if [[ ! -e /bin/badvpn-udpgw ]]; then
     wget -O /bin/badvpn-udpgw wget -O /bin/badvpn-udpgw https://raw.githubusercontent.com/lacasitamx/VPSMX/master/ArchivosUtilitarios/badvpn-udpgw &>/dev/null
     chmod 777 /bin/badvpn-udpgw
     fi
     screen -dmS badvpn2 /bin/badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 1000 --max-connections-for-client 10 
-    [[ "$(ps x | grep badvpn | grep -v grep | awk '{print $1}')" ]] && msg -verd "                  ACTIVADO CON EXITO" || msg -ama "                 Fallo"
+    [[ "$(ps x | grep badvpn | grep -v grep | awk '{print $1}')" ]] && msg -verd "                       ACTIVADO CON EXITO." || msg -ama "                 Fallo"
 	sleep 1
 	echo
 	msg -bar
@@ -43,7 +43,7 @@ if [ "$pid_badvpn" = "" ]; then
     apt install cmake -y &>/dev/null
     netf &>/dev/null
     echo
-    echo "      ... ACTIVACION EJECUTADA CON EXITO...."
+    echo "  ✅ ACTIVACION EJECUTADA CON EXITO.   "
     read enter
 else
     msg -ama "                DESACTIVANDO BADVPN"

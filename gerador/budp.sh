@@ -46,7 +46,7 @@ if [ "$pid_badvpn" = "" ]; then
     echo "  ✅ ACTIVACION EJECUTADA CON EXITO.   "
     read enter
 else
-    msg -ama "                DESACTIVANDO BADVPN"
+    msg -ama "                  DESACTIVANDO BADVPN"
     msg -bar
     kill -9 $(ps x | grep badvpn | grep -v grep | awk '{print $1'}) > /dev/null 2>&1
     killall badvpn-udpgw > /dev/null 2>&1

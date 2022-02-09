@@ -772,31 +772,14 @@ resellers () {
 clear
 msg -bar
 echo
-echo -e "  \e[1;92m |>>>>>> PANEL RESELLER | VIP-GHOST <<<<<|\e[0m"
-echo -e "\e[1;92m Por favor, digita a continuacion el nuevo RESELLER!!\e[0m"
-read -p " RESELLER: " Ghost
-echo "$Ghost" > /etc/newadm/message.txt
-msg -bar2
+echo -e "  \e[1;92m | >>>>> PANEL RESELLER | VIP-PERÚ<<<<< |\e[0m"
+echo -e "\e[1;92m RESELLER ACCESO PREMIUM!!\e[0m"
+echo -e "OPCION BLOQUEADO : Lo sentimos , está opción no está disponible para la SCRIPT - FREE , compré una menbresia semanal o mensual porfavor.
+➫ Contactate via telegram con @GENKEY_BOT ."
 echo
 echo
-msg -bra "            RESELLER:  "$Ghost
-echo
+echo "     ▓ Su slogan favorito no ah sido procesado!!!"
 msg -bar
-echo "       ▪︎NUEVO CREDITO AGREDADO CON EXITO!!!"
-msg -bar
-echo '#!/bin/sh -e' > /etc/rc.local
-sudo chmod +x /etc/rc.local
-echo "sudo rebootnb" >> /etc/rc.local
-echo "sudo resetsshdrop" >> /etc/rc.local
-echo "sleep 2s" >> /etc/rc.local
-echo "exit 0" >> /etc/rc.local
-/bin/cp /etc/skel/.bashrc ~/
-echo 'clear' >> .bashrc
-echo 'DATE=$(date +"%d-%m-%y")' >> .bashrc
-echo 'TIME=$(date +"%T")' >> .bashrc
-sleep 1
-return 0
-clear
 }
 
 #########VISUALIZACION DE MENU

@@ -32,8 +32,8 @@ USRdatacredi="/etc/BOT-C2/creditos"
 clear
 msg -bar
 echo
-echo -e "  \e[1;92m | >>>>> PANEL RESELLER | VIP-PERÚ<<<<< |\e[0m"
-echo -e "              \e[1;92m RESELLER ACCESO PREMIUM!!\e[0m"
+echo -e "  \e[1;92m | >>>>> PANEL BOT  | VIP-PERÚ<<<<< |\e[0m"
+echo -e "    \e[1;92mBOT DE GESTIÓN - TELEGRAM - ACCESO PREMIUM!!\e[0m"
 echo
 echo -e "       \e[1;41m| OPCIÓN BLOQUEADO |\e[1;41m"
 echo
@@ -43,9 +43,13 @@ echo -e "    Compré una menbresia semanal o mensual porfavor."
 echo -e "    ➫ Contactate via telegram con @GENKEY_BOT ."
 echo
 echo
-echo "     ▓ Su slogan favorito no ah sido procesado!!!"
+echo "     ▓ Bot de gestión via telegram no ah sido procesado!!!"
 msg -bar
 }
+           esac
+    done
+done
+
 
 openvpn_pids () {
 #nome|#loguin|#rcv|#snd|#time

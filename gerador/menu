@@ -1042,5 +1042,5 @@ case ${selection} in
 15)creditoss ;;
 0)cd $HOME && exit 0;;
 esac
-msg -ne "Enter Para Continuar" && read enter
+msg -ne "  ➫ Enter para continuar porfavor... " && read enter
 ${SCPdir}/menu

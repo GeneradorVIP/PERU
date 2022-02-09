@@ -783,10 +783,13 @@ msg -bar
 }
 
 cambiopass () {
+clear
+msg -bar
+echo
 echo -e "  \e[1;92m | >>>>> CAMBIAR CONTRASEÑA DE DROPLET | VIP-PERÚ<<<<< |\e[0m"
 echo -e "\e[1;92m PASSWORD ACCESO PREMIUM!!\e[0m"
 echo -e "    OPCION BLOQUEADO :"
-echo -e "   Lo sentimos , está opción no está disponible para la SCRIPT - FREE.
+echo -e "   Lo sentimos , está opción no está disponible para la SCRIPT - FREE."
 echo -e "   Compré una menbresia semanal o mensual porfavor."
 echo -e "   ➫ Contactate via telegram con @GENKEY_BOT ."
 echo

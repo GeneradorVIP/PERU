@@ -114,32 +114,19 @@ msg -bar
 return
 }
 
-rootpass () {
+cambiopass () {
 clear
 msg -bar
-echo -e "${cor[3]}  Esta herramienta cambia a usuario root las VPS de "
-echo -e "${cor[3]}             GoogleCloud y Amazon"
-msg -bar
-echo -ne " Desea Seguir? [S/N]: "; read x
-[[ $x = @(n|N) ]] && msg -bar && return
-msg -bar
-#Inicia Procedimentos
-echo -e "                 Aplicando Configuraciones"
-fun_bar "service ssh restart"
-#Parametros Aplicados
-sed -i "s;PermitRootLogin prohibit-password;PermitRootLogin yes;g" /etc/ssh/sshd_config
-sed -i "s;PermitRootLogin without-password;PermitRootLogin yes;g" /etc/ssh/sshd_config
-sed -i "s;PasswordAuthentication no;PasswordAuthentication yes;g" /etc/ssh/sshd_config
-msg -bar
-echo -e "Escriba su contraseña root actual o cambiela"
-msg -bar
-read  -p " Nuevo passwd: " pass
-(echo $pass; echo $pass)|passwd 2>/dev/null
-sleep 1s
-msg -bar
-echo -e "${cor[3]} Configuraciones aplicadas con exito!"
-echo -e "${cor[2]} Su contraseña ahora es: ${cor[4]}$pass"
-service ssh restart > /dev/null 2>&1
+echo
+echo -e "  \e[1;92m | >>>>> CAMBIAR CONTRASEÑA DE DROPLET | VIP-PERÚ<<<<< |\e[0m"
+echo -e "              \e[1;92m PASSWORD ACCESO PREMIUM!!\e[0m"
+echo -e "    OPCION BLOQUEADO :"
+echo -e "   Lo sentimos , está opción no está disponible para la SCRIPT - FREE."
+echo -e "   Compré una menbresia semanal o mensual porfavor."
+echo -e "   ➫ Contactate via telegram con @GENKEY_BOT ."
+echo
+echo
+echo "     ▓ PASSWORD favorito no ah sido procesado!!!"
 msg -bar
 return
 }
@@ -185,7 +172,7 @@ echo -e "${cor[4]} [1] > \033[1;36mACTUALIZAR VPS"
 echo -e "${cor[4]} [2] > \033[1;36mREINICIAR SERVICIOS"
 echo -e "${cor[4]} [3] > \033[1;36mREINICIAR VPS"
 echo -e "${cor[4]} [4] > \033[1;36mCAMBIAR HOSTNAME VPS"
-echo -e "${cor[4]} [5] > \033[1;36mCAMBIAR CONTRASEÑA ROOT"
+echo -e "${cor[4]} [5] > \033[1;36mCAMBIAR CONTRASEÑA ROOT - DROPLET  "
 echo -e "${cor[4]} [6] > \033[1;36mCAMBIAR HORA LOCAL MX"
 echo -e "${cor[4]} [7] > \033[1;36mCAMBIAR HORA LOCAL PERU-LIMA"
 echo -e "${cor[2]} [8] > \033[1;100mAGREGAR ROOT a GoogleCloud y Amazon \033[0;37m"

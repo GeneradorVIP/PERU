@@ -782,6 +782,26 @@ echo "     ▓ Su slogan favorito no ah sido procesado!!!"
 msg -bar
 }
 
+cambiopass () {
+echo -e "${cor[3]} $(fun_trans "Esta herramienta cambia la contraseña de su servidor VPS")"
+echo -e "${cor[3]} $(fun_trans "Esta contraseña es utilizada como usuario") root"
+msg -bar
+echo -ne " $(fun_trans "Desea Seguir?") [S/N]: "; read x
+[[ $x = @(n|N) ]] && msg -bar && return
+msg -bar
+#Inicia Procedimentos
+echo -e "${cor[0]} $(fun_trans "Escriba su nueva contraseña")"
+msg -bar
+read  -p " Nuevo passwd: " pass
+(echo $pass; echo $pass)|passwd 2>/dev/null
+sleep 1s
+msg -bar
+echo -e "${cor[3]} $(fun_trans "Contraseña cambiada con exito!")"
+echo -e "${cor[2]} $(fun_trans "Su contraseña ahora es"): ${cor[4]}$pass"
+msg -bar
+return
+}
+
 #########VISUALIZACION DE MENU
 msg -bar
 echo -e "\e[97m\033[1;41m    📋PANEL DE CONTROL VPS•PERU   | |   ✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹      \033[1;37m"
@@ -999,9 +1019,9 @@ echo -ne " $(msg -verd " [10]") $(msg -verm2 "=>>") \e[36m MONITOR HTOP \e[97m" 
 msg -bar
 echo -ne " \e[93m [12] \e[97m $(msg -verm2 "=>>") $(msg -verd "ACTUALIZAR ") " && echo -ne "\e[93m  [13] \e[97m $(msg -verm2 "=>>") "&& msg -bra "\033[1;31m DESINTALAR "
 msg -bar
-echo -ne "$(msg -verd "  [14]") $(msg -verm2 "=>>") " && echo -ne "\033[1;97mCREDITOS" && echo -ne "$(msg -verd " [0]") $(msg -verm2 "=>>") "&& msg -bra "\033[1;41m ❗️ SALIR DEL SCRIPT ❗️ "
+echo -ne "$(msg -verd "  [15]") $(msg -verm2 "=>>") " && echo -ne "\033[1;97mCREDITOS" && echo -ne "$(msg -verd " [0]") $(msg -verm2 "=>>") "&& msg -bra "\033[1;41m ❗️ SALIR DEL SCRIPT ❗️ "
 msg -bar
-selection=$(selection_fun 14)
+selection=$(selection_fun 15)
 case ${selection} in
 1)${SCPusr}/usercodes "${idioma}" ;;
 2)${SCPinst}/C-SSR.sh ;;
@@ -1016,7 +1036,8 @@ case ${selection} in
 11)resellers;;
 12)atualiza_fun;;
 13)remove_script;;
-14)creditoss ;;
+14)cambiopass;;
+15)creditoss ;;
 0)cd $HOME && exit 0;;
 esac
 msg -ne "Enter Para Continuar" && read enter

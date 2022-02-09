@@ -1014,7 +1014,7 @@ menu_func "ADMINISTRAR CUENTAS | SSH/SSL/DROPBEAR" "ADMINISTRAR CUENTAS | SS/SSR
 msg -bar
 echo -ne " $(msg -verd " [10]") $(msg -verm2 "=>>") \e[36m MONITOR HTOP \e[97m" && echo -ne "$(msg -verd " [11]") $(msg -verm2 "=>>") "&& msg -bra "\033[1;32m CAMBIO DE RESELLER "
 msg -bar
-echo -ne " $(msg -verd " [12]\e[97m $(msg -verm2 "=>>") $(msg -verd "ACTUALIZAR ") " && echo -ne "\e[93m  [13] \e[97m $(msg -verm2 "=>>") "&& msg -bra "\033[1;31m DESINTALAR "
+echo -ne " \e[93m [12] \e[97m $(msg -verm2 "=>>") $(msg -verd "ACTUALIZAR ") " && echo -ne "\e[93m  [13] \e[97m $(msg -verm2 "=>>") "&& msg -bra "\033[1;31m DESINTALAR "
 msg -bar
 echo -ne " $(msg -verd " [14]\e[97m $(msg -verm2 "=>>")  "&& msg -bra "\033[1;32m CAMBIO DE CONTRASEÑA ROOT - DROPLET "
 msg -bar

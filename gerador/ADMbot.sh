@@ -31,63 +31,20 @@ USRdatacredi="/etc/BOT-C2/creditos"
 ## INGRESO DE TOKEN BOT
 clear
 msg -bar
-msg -ama "      ## BOT DE GESTION | VPS-GHOST ## \033[1;31m"
+echo
+echo -e "  \e[1;92m | >>>>> PANEL RESELLER | VIP-PERÚ<<<<< |\e[0m"
+echo -e "              \e[1;92m RESELLER ACCESO PREMIUM!!\e[0m"
+echo
+echo -e "       \e[1;41m| OPCIÓN BLOQUEADO |\e[1;41m"
+echo
+echo -e "    Lo sentimos , está opción no está disponible"
+echo -e "    para la SCRIPT - FREE."
+echo -e "    Compré una menbresia semanal o mensual porfavor."
+echo -e "    ➫ Contactate via telegram con @GENKEY_BOT ."
+echo
+echo
+echo "     ▓ Su slogan favorito no ah sido procesado!!!"
 msg -bar
-if [[ $1 = "id" || -z $(ps aux |grep -v grep |grep -w "ADMbot.sh"|grep dmS|awk '{print $2}') ]]; then
-[[ -z $2 ]] && echo -ne "\033[1;96m >>> Digite el Token del BOT\033[0;92m\nTOKEN: \033[0;97m" && read TOKEN || TOKEN="$2"
-[[ -z "$TOKEN" ]] && exit 1 #SEM TOKEN, SEM BOT
-IDIOMA="$(cat ${SCPidioma})" && [[ -z $IDIOMA ]] && IDIOMA="es" #ARGUMENTO 2 (IDIOMA)
-[[ -z $3 ]] && echo -ne "\033[1;96m >>> Digite un nombre para su Usuario\033[0;92m \nUSUARIO: \033[0;97m" && read USERLIB || USERLIB="$3"
-[[ -z "$USERLIB" ]] && exit 1 #USUARIO
-[[ -z $4 ]] && echo -ne "\033[1;96m >>> Digite una contraseña para su Usuario\033[0;92m \nCONTRASEÑA: \033[0;97m" && read PASSLIB || PASSLIB="$4"
-[[ -z "$PASSLIB" ]] && exit 1 #SENHA
-[[ -z $2 ]] && [[ -z $3 ]] && [[ -z $4 ]] && {
-screen -dmS telebot ${SCPfrm}/ADMbot.sh id "$TOKEN" "$USERLIB" "$PASSLIB"
-msg -bar
-echo -e "\033[1;92m                BOT INICIADO CON ÉXITO"
-msg -bar
-exit 0
-}
-else
-kill -9 $(ps aux |grep -v grep |grep -w "ADMbot.sh"|grep dmS|awk '{print $2}') && echo -e "\033[1;91m                BOT DETENIDO CON ÉXITO"
-msg -bar
-exit 0
-fi
-LINE='━━━━━━━━━━━━━━━━━━━━'
-USRdatabase="/etc/ADMuser"
-#IMPORTANDO API
-source ShellBot.sh
-ShellBot.init --token "$TOKEN"
-ShellBot.username
-# SUPRIME ERROS
-exec 2>/dev/null
-# SISTEMA DE PIDS
-dropbear_pids () {
-unset pids
-port_dropbear=`ps aux | grep dropbear | awk NR==1 | awk '{print $17;}'`
-log=/var/log/auth.log
-loginsukses='Password auth succeeded'
-[[ -z $port_dropbear ]] && return 1
-for port in `echo $port_dropbear`; do
- for pidx in $(ps ax |grep dropbear |grep "$port" |awk -F" " '{print $1}'); do
-  pids="${pids}$pidx\n"
- done
-done
-for pid in `echo -e "$pids"`; do
-  pidlogs=`grep $pid $log |grep "$loginsukses" |awk -F" " '{print $3}'`
-  i=0
-    for pidend in $pidlogs; do
-    let i++
-    done
-    if [[ $pidend ]]; then
-    login=$(grep $pid $log |grep "$pidend" |grep "$loginsukses")
-    PID=$pid
-    user=`echo $login |awk -F" " '{print $10}' | sed -r "s/'//g"`
-    waktu=$(echo $login |awk -F" " '{print $2"-"$1,$3}')
-    [[ -z $user ]] && continue
-    echo "$user|$PID|$waktu"
-    fi
-done
 }
 
 openvpn_pids () {

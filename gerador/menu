@@ -783,23 +783,16 @@ msg -bar
 }
 
 cambiopass () {
-echo -e "${cor[3]} $(fun_trans "Esta herramienta cambia la contraseña de su servidor VPS")"
-echo -e "${cor[3]} $(fun_trans "Esta contraseña es utilizada como usuario") root"
+echo -e "  \e[1;92m | >>>>> CAMBIAR CONTRASEÑA DE DROPLET | VIP-PERÚ<<<<< |\e[0m"
+echo -e "\e[1;92m PASSWORD ACCESO PREMIUM!!\e[0m"
+echo -e "    OPCION BLOQUEADO :"
+echo -e "   Lo sentimos , está opción no está disponible para la SCRIPT - FREE.
+echo -e "   Compré una menbresia semanal o mensual porfavor."
+echo -e "   ➫ Contactate via telegram con @GENKEY_BOT ."
+echo
+echo
+echo "     ▓ PASSWORD favorito no ah sido procesado!!!"
 msg -bar
-echo -ne " $(fun_trans "Desea Seguir?") [S/N]: "; read x
-[[ $x = @(n|N) ]] && msg -bar && return
-msg -bar
-#Inicia Procedimentos
-echo -e "${cor[0]} $(fun_trans "Escriba su nueva contraseña")"
-msg -bar
-read  -p " Nuevo passwd: " pass
-(echo $pass; echo $pass)|passwd 2>/dev/null
-sleep 1s
-msg -bar
-echo -e "${cor[3]} $(fun_trans "Contraseña cambiada con exito!")"
-echo -e "${cor[2]} $(fun_trans "Su contraseña ahora es"): ${cor[4]}$pass"
-msg -bar
-return
 }
 
 #########VISUALIZACION DE MENU

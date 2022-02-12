@@ -45,7 +45,6 @@ echo
 echo
 echo "     ▓ Bot de gestión via telegram no ah sido procesado!!!"
 msg -bar
-}
            esac
     done
 done

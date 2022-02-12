@@ -19,4 +19,5 @@ echo
 echo "     ▓ Bot de gestión via telegram no ah sido procesado!!!"
 msg -bar
 echo
+sleep 1
 read enter

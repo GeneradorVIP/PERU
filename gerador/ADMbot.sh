@@ -18,4 +18,7 @@ echo
 echo
 echo "     ▓ Bot de gestión via telegram no ah sido procesado!!!"
 echo
-msg -ne "  ➫ Enter para continuar porfavor... " && read enter
+msg -bar
+echo
+sleep 1
+read enter

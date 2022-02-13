@@ -17,7 +17,5 @@ echo -e "    ➫ Contactate via telegram con @GENKEY_BOT ."
 echo
 echo
 echo "     ▓ Bot de gestión via telegram no ah sido procesado!!!"
-msg -bar
 echo
-sleep 1
-read enter
+msg -ne "  ➫ Enter para continuar porfavor... " && read enter

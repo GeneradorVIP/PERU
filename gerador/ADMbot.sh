@@ -22,3 +22,4 @@ msg -bar
 echo
 sleep 1
 read enter
+exit

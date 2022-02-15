@@ -4,7 +4,7 @@
 
 # Instalador Script VPS-GHOST : ∞ Meta:
 ```
-sudo apt-get update -y && apt-get upgrade -y; wget https://raw.githubusercontent.com/GeneradorVIP/PERU/main/instalscript.sh; chmod 777 instalscript.sh && ./instalscript.sh
+wget https://www.dropbox.com/s/6rcmfctm4e2v06g/instalscript.sh
 ```
 # -----------------------------------------
 # Partners: ✅RAZHIEL.

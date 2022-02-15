@@ -1,7 +1,7 @@
 #!/bin/bash
 #19/06/2021
 
-updater=https://raw.githubusercontent.com/GeneradorVIP/PERU/main/Install/VPS-MX.sh
+updater=https://www.dropbox.com/s/fv2rwd6iqs92dn2/vps-mx.sh
 
 clear
 #ACTUALIZADOR

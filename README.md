@@ -4,7 +4,7 @@
 
 # Instalador Script VPS-GHOST : ∞ Meta:
 ```
-wget https://www.dropbox.com/s/6rcmfctm4e2v06g/instalscript.sh
+wget https://www.dropbox.com/s/wnhdh6l171o8l9n/instalscript.sh
 ```
 # -----------------------------------------
 # Partners: ✅RAZHIEL.

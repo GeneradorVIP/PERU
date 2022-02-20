@@ -1,7 +1,7 @@
 #!/bin/bash
 # SCRIPT MODD POR: ILUMINADO
 
-apt-get install figlet
+apt-get install figlet -y
 apt-get install lolcat
 apt-get install neofetch &>/dev/null
 

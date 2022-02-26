@@ -20,5 +20,5 @@ echo "     ▓ Bot de gestión via telegram no ah sido procesado!!!"
 echo
 && msg -bar2
 sleep 1
-exit
+read enter && exit
 }

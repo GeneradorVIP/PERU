@@ -1045,7 +1045,7 @@ echo -ne " \e[93m [12]\e[97m $(msg -verm2 "=>>") $(msg -verd "ACTUALIZAR ") " &&
 msg -bar
 echo -ne " \e[93m [14]\e[97m $(msg -verm2 "=>>")  "&& msg -bra "  \033[1;32m CAMBIO DE CONTRASEÑA ROOT - DROPLET "
 msg -bar
-echo -ne " \e[93m [15]\e[97m $(msg -verm2 "=>>")  "&& msg -bra "       \033[1;32m BOT DE GESTIÓN - TELEGRAM  "
+echo -ne " \e[93m [15]\e[97m $(msg -verm2 "=>>")  "&& msg -bra "   \033[1;32m BOT DE GESTIÓN - TELEGRAM ↭ $AD "
 msg -bar
 echo -ne "$(msg -verd "  [16]") $(msg -verm2 "=>>") " && echo -ne "\033[1;97mCREDITOS" && echo -ne "     $(msg -verd " [0]") $(msg -verm2 "=>>") "&& msg -bra "\033[1;41m ❗️ SALIR DEL SCRIPT ❗️ "
 msg -bar
